@@ -1,42 +1,7 @@
+<!---->
+
 <html>
-
-<head>
-    <script src="adapter/adapter.js"></script>
-    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
-    <script>
-        var peer = new Peer();
-        peer.on('open', (id) => console.log("My Id: " + id));
-        function Click() {
-            // Find the canvas element to capture
-            window.alert("确认连接？");
-            const canvasElt = document.querySelector('canvas');
-            const stream = canvasElt.captureStream(25);
-            peer.call("IDonotknow", stream).on('stream', function (stream) {
-                const videoElem = document.querySelector("video");
-                videoElem.srcObject = stream;
-            });
-        }
-
-        function full(){
-            var elem = document.querySelector("video");
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen();
-            }
-        }
-    </script>
-</head>
-
-<body id="errorMsg">
-    <!-- <input id="id_Rtext" type="text" value="yourname" /> <button id="RegisterID"
-        onclick="RegisterID()">RegisterID</button><br />
-    <input id="id_text" type="text" value="chat_name" /> <button id="Connect" onclick="Connect_button()"
-        disabled="disabled">Connect</button><br /> -->
-        <button id="Connect" onclick="Click()">Connect</button><br/>
-        <button id="fullScreen" onclick="full()">FullScreen</button>
-    <video style="border: 1px solid #999;width: 98%;max-width: 860px;" autoplay></video><br/>
-    <canvas></canvas>
-
-
-</body>
+<head>建设中</head>
+<body></body>
 
 </html>
