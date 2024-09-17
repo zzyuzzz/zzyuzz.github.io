@@ -11,7 +11,7 @@ body {
     background-color: black;
 }
 
-img {
+video {
     /* display: block; */
     position:fixed;
     top: 50%;
@@ -23,6 +23,7 @@ img {
     max-height: 100%;
     z-index: -10;
 }
+
 
 
   
